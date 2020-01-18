@@ -37,12 +37,9 @@ of the MIT license.  See the COPYING file for details.
  */
 public class RussoConfluenceAuthenticator extends ConfluenceAuthenticator {
 
-	// Header we read. Has to be lowercase even if the header is set uppercase in
-	// apache
-	// private static final String strHeaderName = "x-forwarded-user";
-
-	// Use Post CH specific header
-	private static final String strHeaderName = "X-RP-USR";
+	// Header we read. Has to be lowercase even if the header is set uppercase in apache
+	//private static final String strHeaderName = "x-forwarded-user";
+	private static final String strHeaderName = "x-rp-usr";
 
 	private static final long serialVersionUID = 1807345345435345234L;
 
